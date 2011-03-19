@@ -94,6 +94,7 @@
     <cobertura-maven-plugin.version>2.4</cobertura-maven-plugin.version>
     <taglist-maven-plugin.version>2.4</taglist-maven-plugin.version>
     <versions-maven-plugin.version>1.2</versions-maven-plugin.version>
+    <maven-checksum-plugin.version>1.0</maven-checksum-plugin.version>
 
   </properties>
 
@@ -207,6 +208,11 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>cobertura-maven-plugin</artifactId>
           <version>${cobertura-maven-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>net.ju-n.maven.plugins</groupId>
+          <artifactId>maven-checksum-plugin</artifactId>
+          <version>${maven-checksum-plugin.version}</version>
         </plugin>
       </plugins>
     </pluginManagement>
