@@ -95,6 +95,7 @@
     <taglist-maven-plugin.version>2.4</taglist-maven-plugin.version>
     <versions-maven-plugin.version>1.2</versions-maven-plugin.version>
     <maven-checksum-plugin.version>1.0</maven-checksum-plugin.version>
+    <maven-android-plugin.version>2.9.0-beta-1</maven-android-plugin.version>
 
   </properties>
 
@@ -213,6 +214,11 @@
           <groupId>net.ju-n.maven.plugins</groupId>
           <artifactId>maven-checksum-plugin</artifactId>
           <version>${maven-checksum-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+          <artifactId>maven-android-plugin</artifactId>
+          <version>${maven-android-plugin.version}</version>
         </plugin>
       </plugins>
     </pluginManagement>
