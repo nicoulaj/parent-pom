@@ -97,6 +97,7 @@
     <versions-maven-plugin.version>1.2</versions-maven-plugin.version>
     <maven-checksum-plugin.version>1.0</maven-checksum-plugin.version>
     <maven-android-plugin.version>2.9.0-beta-1</maven-android-plugin.version>
+    <proguard-maven-plugin.version>2.0.4</proguard-maven-plugin.version>
 
   </properties>
 
@@ -224,6 +225,11 @@
           <groupId>com.jayway.maven.plugins.android.generation2</groupId>
           <artifactId>maven-android-plugin</artifactId>
           <version>${maven-android-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>com.pyx4me</groupId>
+          <artifactId>proguard-maven-plugin</artifactId>
+          <version>${proguard-maven-plugin.version}</version>
         </plugin>
       </plugins>
     </pluginManagement>
