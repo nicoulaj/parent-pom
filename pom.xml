@@ -102,6 +102,12 @@
     <proguard-maven-plugin.version>2.0.4</proguard-maven-plugin.version>
     <maven-replacer-plugin.version>1.3.5</maven-replacer-plugin.version>
 
+    <!-- Wagons/providers/extensions versions -->
+    <wagon-ftp.version>1.0-beta-6</wagon-ftp.version>
+    <wagon-gitsite.version>0.3.1</wagon-gitsite.version>
+    <maven-scm-provider-gitexe.version>1.4</maven-scm-provider-gitexe.version>
+    <maven-scm-manager-plexus.version>1.4</maven-scm-manager-plexus.version>
+
   </properties>
 
   <dependencyManagement>
