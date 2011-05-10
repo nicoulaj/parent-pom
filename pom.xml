@@ -72,6 +72,7 @@
     <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
 
     <!-- Plugins versions -->
+    <maven-jar-plugin.version>2.3.1</maven-jar-plugin.version>
     <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
     <maven-assembly-plugin.version>2.2.1</maven-assembly-plugin.version>
     <maven-invoker-plugin.version>1.5</maven-invoker-plugin.version>
@@ -145,6 +146,10 @@
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>${maven-compiler-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>${maven-jar-plugin.version}</version>
         </plugin>
         <plugin>
           <artifactId>maven-assembly-plugin</artifactId>
