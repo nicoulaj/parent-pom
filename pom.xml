@@ -77,6 +77,7 @@
     <maven-ear-plugin.version>2.5</maven-ear-plugin.version>
     <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
     <maven-assembly-plugin.version>2.2.1</maven-assembly-plugin.version>
+    <maven-resources-plugin.version>2.5</maven-resources-plugin.version>
     <maven-invoker-plugin.version>1.5</maven-invoker-plugin.version>
     <maven-release-plugin.version>2.1</maven-release-plugin.version>
     <maven-plugin-plugin.version>2.7</maven-plugin-plugin.version>
@@ -176,6 +177,10 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>${maven-surefire-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>${maven-resources-plugin.version}</version>
         </plugin>
         <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
