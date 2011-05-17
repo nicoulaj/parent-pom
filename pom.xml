@@ -25,7 +25,7 @@
   <name>net.ju-n parent POM</name>
   <inceptionYear>2011</inceptionYear>
   <description><![CDATA[net.ju-n parent POM]]></description>
-  <url>https://github.com/nicoulaj/net-ju-n-parent</url>
+  <url>https://gitorious.org/net-ju-n-parent-pom</url>
 
   <licenses>
     <license>
@@ -40,14 +40,14 @@
       <name>Julien Nicoulaud</name>
       <email>julien.nicoulaud@gmail.com</email>
       <timezone>+1</timezone>
-      <url>https://www.github.com/nicoulaj</url>
+      <url>http://www.twitter.com/nicoulaj</url>
     </developer>
   </developers>
 
   <scm>
-    <url>https://github.com/nicoulaj/net-ju-n-parent</url>
-    <connection>scm:git:git@github.com:nicoulaj/net-ju-n-parent.git</connection>
-    <developerConnection>scm:git:git@github.com:nicoulaj/net-ju-n-parent.git</developerConnection>
+    <url>https://gitorious.org/net-ju-n-parent-pom/net-ju-n-parent-pom</url>
+    <connection>scm:git:git@gitorious.org:net-ju-n-parent-pom/net-ju-n-parent-pom.git</connection>
+    <developerConnection>scm:git:git@gitorious.org:net-ju-n-parent-pom/net-ju-n-parent-pom.git</developerConnection>
   </scm>
 
   <distributionManagement>
