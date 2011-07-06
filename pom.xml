@@ -79,7 +79,7 @@
     <maven-assembly-plugin.version>2.2.1</maven-assembly-plugin.version>
     <maven-resources-plugin.version>2.5</maven-resources-plugin.version>
     <maven-invoker-plugin.version>1.5</maven-invoker-plugin.version>
-    <maven-release-plugin.version>2.1</maven-release-plugin.version>
+    <maven-release-plugin.version>2.2</maven-release-plugin.version>
     <maven-plugin-plugin.version>2.7</maven-plugin-plugin.version>
     <maven-site-plugin.version>3.0-beta-3</maven-site-plugin.version>
     <maven-source-plugin.version>2.1.2</maven-source-plugin.version>
@@ -140,10 +140,11 @@
           <artifactId>maven-release-plugin</artifactId>
           <version>${maven-release-plugin.version}</version>
           <configuration>
+            <tagNameFormat>@{project.version}</tagNameFormat>
             <mavenExecutorId>forked-path</mavenExecutorId>
-            <useReleaseProfile>false</useReleaseProfile>
-            <arguments>-Prelease</arguments>
             <autoVersionSubmodules>true</autoVersionSubmodules>
+            <arguments>-Dgpg.passphrase=${gpg.passphrase} -Prelease</arguments>
+            <useReleaseProfile>false</useReleaseProfile>
           </configuration>
         </plugin>
         <plugin>
