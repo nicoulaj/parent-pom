@@ -1,6 +1,6 @@
 # Maven
 target/
-pom.xml.releaseBackup
+pom.xml.*
 release.properties
 
 # IntelliJ IDEA
