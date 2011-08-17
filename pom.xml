@@ -111,10 +111,10 @@
     <maven-jaxb-schemagen-plugin.version>1.2</maven-jaxb-schemagen-plugin.version>
 
     <!-- Wagons/providers/extensions versions -->
-    <wagon-ftp.version>1.0-beta-6</wagon-ftp.version>
+    <wagon-ftp.version>1.0</wagon-ftp.version>
     <wagon-gitsite.version>0.3.1</wagon-gitsite.version>
-    <maven-scm-provider-gitexe.version>1.4</maven-scm-provider-gitexe.version>
-    <maven-scm-manager-plexus.version>1.4</maven-scm-manager-plexus.version>
+    <maven-scm-provider-gitexe.version>1.5</maven-scm-provider-gitexe.version>
+    <maven-scm-manager-plexus.version>1.5</maven-scm-manager-plexus.version>
 
   </properties>
 
