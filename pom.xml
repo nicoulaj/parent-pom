@@ -86,6 +86,7 @@
     <maven-clean-plugin.version>2.4.1</maven-clean-plugin.version>
     <maven-gpg-plugin.version>1.4</maven-gpg-plugin.version>
     <maven-surefire-plugin.version>2.11</maven-surefire-plugin.version>
+    <maven-failsafe-plugin.version>2.11</maven-failsafe-plugin.version>
     <maven-surefire-report-plugin.version>2.11</maven-surefire-report-plugin.version>
     <maven-enforcer-plugin.version>1.0.1</maven-enforcer-plugin.version>
     <maven-project-info-reports-plugin.version>2.4</maven-project-info-reports-plugin.version>
@@ -174,6 +175,10 @@
         <plugin>
           <artifactId>maven-gpg-plugin</artifactId>
           <version>${maven-gpg-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-failsafe-plugin</artifactId>
+          <version>${maven-failsafe-plugin.version}</version>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
