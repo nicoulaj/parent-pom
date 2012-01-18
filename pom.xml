@@ -19,7 +19,7 @@
 
   <groupId>net.ju-n</groupId>
   <artifactId>net-ju-n-parent</artifactId>
-  <version>1.0.13</version>
+  <version>1.0.14-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>net.ju-n parent POM</name>
