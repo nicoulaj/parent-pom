@@ -112,6 +112,13 @@
     <maven-jaxb-schemagen-plugin.version>1.2</maven-jaxb-schemagen-plugin.version>
     <github-downloads-maven-plugin>0.4</github-downloads-maven-plugin>
     <github-site-maven-plugin>0.5</github-site-maven-plugin>
+    
+    <!-- Commonly used dependencies versions -->
+    <junit.version>4.10</junit.version>
+    <testng.version>6.5.1</testng.version>
+    <slf4j.version>1.6.4</slf4j.version>
+    <logback.version>1.0.1</logback.version>
+    <log4j.version>1.2.16</log4j.version>
 
     <!-- Wagons/providers/extensions versions -->
     <wagon-ftp.version>1.0</wagon-ftp.version>
@@ -126,12 +133,47 @@
       <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
-        <version>6.4</version>
+        <version>${testng.version}</version>
       </dependency>
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>4.10</version>
+        <version>${junit.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>jul-to-slf4j</artifactId>
+        <version>${slf4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>log4j-over-slf4j</artifactId>
+        <version>${slf4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>jcl-over-slf4j</artifactId>
+        <version>${slf4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-core</artifactId>
+        <version>${logback.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>${logback.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+        <version>${log4j.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
