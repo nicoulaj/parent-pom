@@ -5,5 +5,5 @@ if [[ -z $1 ]]; then
   exit 1
 fi
 
-mvn release:prepare release:perform release:clean clean -Dgpg.passphrase=$1
+mvn --batch-mode release:prepare release:perform release:clean clean -Dgpg.passphrase=$1
 
