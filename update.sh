@@ -1,4 +1,4 @@
 #!/bin/sh
 
-mvn versions:use-latest-releases versions:update-properties versions:commit
+mvn versions:use-latest-versions versions:update-properties versions:commit --update-snapshots
 
