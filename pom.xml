@@ -19,7 +19,7 @@
 
   <groupId>net.ju-n</groupId>
   <artifactId>net-ju-n-parent</artifactId>
-  <version>1.0.19</version>
+  <version>1.0.20-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>net.ju-n parent POM</name>
@@ -48,7 +48,7 @@
     <url>https://gitorious.org/net-ju-n-parent-pom/net-ju-n-parent-pom</url>
     <connection>scm:git:git@gitorious.org:net-ju-n-parent-pom/net-ju-n-parent-pom.git</connection>
     <developerConnection>scm:git:git@gitorious.org:net-ju-n-parent-pom/net-ju-n-parent-pom.git</developerConnection>
-    <tag>1.0.19</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
