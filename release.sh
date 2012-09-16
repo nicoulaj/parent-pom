@@ -5,5 +5,6 @@ if [[ -z $1 ]]; then
   exit 1
 fi
 
+git commit -a -m "POM update"
 mvn --batch-mode release:prepare release:perform release:clean clean -Dgpg.passphrase=$1
 
