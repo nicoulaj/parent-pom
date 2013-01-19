@@ -76,7 +76,7 @@
     <maven-jar-plugin.version>2.4</maven-jar-plugin.version>
     <maven-war-plugin.version>2.3</maven-war-plugin.version>
     <maven-ear-plugin.version>2.8</maven-ear-plugin.version>
-    <maven-compiler-plugin.version>2.5.1</maven-compiler-plugin.version>
+    <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
     <maven-assembly-plugin.version>2.3</maven-assembly-plugin.version>
     <maven-resources-plugin.version>2.6</maven-resources-plugin.version>
     <maven-invoker-plugin.version>1.5</maven-invoker-plugin.version>
@@ -86,22 +86,22 @@
     <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
     <maven-clean-plugin.version>2.5</maven-clean-plugin.version>
     <maven-gpg-plugin.version>1.4</maven-gpg-plugin.version>
-    <maven-surefire-plugin.version>2.12.4</maven-surefire-plugin.version>
-    <maven-failsafe-plugin.version>2.12.4</maven-failsafe-plugin.version>
-    <maven-surefire-report-plugin.version>2.12.4</maven-surefire-report-plugin.version>
-    <maven-enforcer-plugin.version>1.1.1</maven-enforcer-plugin.version>
+    <maven-surefire-plugin.version>2.13</maven-surefire-plugin.version>
+    <maven-failsafe-plugin.version>2.13</maven-failsafe-plugin.version>
+    <maven-surefire-report-plugin.version>2.13</maven-surefire-report-plugin.version>
+    <maven-enforcer-plugin.version>1.2</maven-enforcer-plugin.version>
     <maven-project-info-reports-plugin.version>2.6</maven-project-info-reports-plugin.version>
     <maven-javadoc-plugin.version>2.9</maven-javadoc-plugin.version>
     <maven-deploy-plugin.version>2.7</maven-deploy-plugin.version>
     <maven-jxr-plugin.version>2.3</maven-jxr-plugin.version>
     <maven-jarsigner-plugin.version>1.2</maven-jarsigner-plugin.version>
-    <maven-invoker-plugin.version>1.7</maven-invoker-plugin.version>
+    <maven-invoker-plugin.version>1.8</maven-invoker-plugin.version>
     <maven-pmd-plugin.version>2.7.1</maven-pmd-plugin.version>
     <maven-checkstyle-plugin.version>2.9.1</maven-checkstyle-plugin.version>
     <maven-changelog-plugin.version>2.2</maven-changelog-plugin.version>
     <cobertura-maven-plugin.version>2.5.2</cobertura-maven-plugin.version>
     <taglist-maven-plugin.version>2.4</taglist-maven-plugin.version>
-    <versions-maven-plugin.version>1.3.1</versions-maven-plugin.version>
+    <versions-maven-plugin.version>2.0</versions-maven-plugin.version>
     <build-helper-maven-plugin.version>1.7</build-helper-maven-plugin.version>
     <maven-checksum-plugin.version>1.0</maven-checksum-plugin.version>
     <maven-android-plugin.version>3.0.0-alpha-11</maven-android-plugin.version>
@@ -117,7 +117,7 @@
     <github-site-maven-plugin>0.7</github-site-maven-plugin>
 
     <!-- Commonly used project dependencies versions -->
-    <junit.version>4.10</junit.version>
+    <junit.version>4.11</junit.version>
     <testng.version>6.8</testng.version>
     <slf4j.version>1.7.2</slf4j.version>
     <logback.version>1.0.7</logback.version>
