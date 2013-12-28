@@ -19,7 +19,7 @@
 
   <groupId>net.ju-n</groupId>
   <artifactId>net-ju-n-parent</artifactId>
-  <version>27</version>
+  <version>28-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>net.ju-n parent POM</name>
@@ -48,7 +48,7 @@
     <url>https://gitorious.org/net-ju-n-parent-pom/net-ju-n-parent-pom</url>
     <connection>scm:git:git@gitorious.org:net-ju-n-parent-pom/net-ju-n-parent-pom.git</connection>
     <developerConnection>scm:git:git@gitorious.org:net-ju-n-parent-pom/net-ju-n-parent-pom.git</developerConnection>
-    <tag>27</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
@@ -182,6 +182,20 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <!-- workaround for MRELEASE-812 -->
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.maven.scm</groupId>
+      <artifactId>maven-scm-api</artifactId>
+      <version>1.8.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven.scm</groupId>
+      <artifactId>maven-scm-provider-gitexe</artifactId>
+      <version>1.8.1</version>
+    </dependency>
+  </dependencies>
 
   <build>
     <pluginManagement>
