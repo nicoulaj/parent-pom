@@ -80,7 +80,7 @@
     <maven-assembly-plugin.version>2.4</maven-assembly-plugin.version>
     <maven-resources-plugin.version>2.6</maven-resources-plugin.version>
     <maven-invoker-plugin.version>1.5</maven-invoker-plugin.version>
-    <maven-release-plugin.version>2.3.2</maven-release-plugin.version>
+    <maven-release-plugin.version>2.4.2</maven-release-plugin.version>
     <maven-plugin-plugin.version>3.2</maven-plugin-plugin.version>
     <maven-site-plugin.version>3.3</maven-site-plugin.version>
     <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
@@ -182,6 +182,20 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <!-- workaround for MRELEASE-812 -->
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.maven.scm</groupId>
+      <artifactId>maven-scm-api</artifactId>
+      <version>1.8.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven.scm</groupId>
+      <artifactId>maven-scm-provider-gitexe</artifactId>
+      <version>1.8.1</version>
+    </dependency>
+  </dependencies>
 
   <build>
     <pluginManagement>
