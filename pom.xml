@@ -4,7 +4,7 @@
 
   <groupId>net.ju-n</groupId>
   <artifactId>net-ju-n-parent</artifactId>
-  <version>30-SNAPSHOT</version>
+  <version>30</version>
   <packaging>pom</packaging>
 
   <name>net.ju-n parent POM</name>
@@ -32,7 +32,7 @@
     <url>https://gitorious.org/net-ju-n-parent-pom/net-ju-n-parent-pom</url>
     <connection>scm:git:git@gitorious.org:net-ju-n-parent-pom/net-ju-n-parent-pom.git</connection>
     <developerConnection>scm:git:git@gitorious.org:net-ju-n-parent-pom/net-ju-n-parent-pom.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>30</tag>
   </scm>
 
   <distributionManagement>
