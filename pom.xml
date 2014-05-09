@@ -120,6 +120,9 @@
     <wagon-gitsite.version>0.3.5</wagon-gitsite.version>
     <doxia-module-markdown.version>1.5</doxia-module-markdown.version>
     <maven-fluido-skin.version>1.3.1</maven-fluido-skin.version>
+    
+    <!-- Misc -->
+    <skipTests>false</skipTests>
 
   </properties>
 
