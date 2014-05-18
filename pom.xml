@@ -105,7 +105,7 @@
     <izpack-maven-plugin.version>5.0.0-rc2</izpack-maven-plugin.version>
     <github-downloads-maven-plugin.version>0.6</github-downloads-maven-plugin.version>
     <github-site-maven-plugin.version>0.9</github-site-maven-plugin.version>
-    <jacoco-maven-plugin.version>0.7.0.201403182114</jacoco-maven-plugin.version>
+    <jacoco-maven-plugin.version>0.7.1.201405082137</jacoco-maven-plugin.version>
 
     <!-- Commonly used project dependencies versions -->
     <junit.version>4.11</junit.version>
@@ -175,20 +175,6 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-
-  <!-- workaround for MRELEASE-812 -->
-  <dependencies>
-    <dependency>
-      <groupId>org.apache.maven.scm</groupId>
-      <artifactId>maven-scm-api</artifactId>
-      <version>1.9</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.maven.scm</groupId>
-      <artifactId>maven-scm-provider-gitexe</artifactId>
-      <version>1.9</version>
-    </dependency>
-  </dependencies>
 
   <build>
     <pluginManagement>
