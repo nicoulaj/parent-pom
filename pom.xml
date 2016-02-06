@@ -10,7 +10,7 @@
   <name>net.ju-n parent POM</name>
   <inceptionYear>2011</inceptionYear>
   <description><![CDATA[net.ju-n parent POM]]></description>
-  <url>https://gitorious.org/net-ju-n-parent-pom</url>
+  <url>https://github.com/nicoulaj/parent-pom</url>
 
   <licenses>
     <license>
@@ -29,9 +29,9 @@
   </developers>
 
   <scm>
-    <url>https://gitorious.org/net-ju-n-parent-pom/net-ju-n-parent-pom</url>
-    <connection>scm:git:git@gitorious.org:net-ju-n-parent-pom/net-ju-n-parent-pom.git</connection>
-    <developerConnection>scm:git:git@gitorious.org:net-ju-n-parent-pom/net-ju-n-parent-pom.git</developerConnection>
+    <url>https://github.com/nicoulaj/parent-pom</url>
+    <connection>scm:git:git@github.com:nicoulaj/parent-pom.git</connection>
+    <developerConnection>scm:git:git@github.com:nicoulaj/parent-pom.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
