@@ -119,7 +119,8 @@
     <wagon-gitsite.version>0.3.5</wagon-gitsite.version>
     <doxia-module-markdown.version>1.6</doxia-module-markdown.version>
     <maven-fluido-skin.version>1.4</maven-fluido-skin.version>
-    
+    <maven-plugin-tools-javadoc.version>3.4</maven-plugin-tools-javadoc.version>
+
     <!-- Misc -->
     <skipTests>false</skipTests>
 
@@ -472,6 +473,15 @@
   </reporting>
 
   <profiles>
+    <profile>
+        <id>disable-java8-doclint</id>
+        <activation>
+            <jdk>[1.8,)</jdk>
+        </activation>
+        <properties>
+            <additionalparam>-Xdoclint:none</additionalparam>
+        </properties>
+    </profile>
     <profile>
       <id>release</id>
       <activation>
