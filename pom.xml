@@ -61,16 +61,16 @@
     <copyrightholder>Julien Nicoulaud &lt;julien.nicoulaud@gmail.com&gt;</copyrightholder>
 
     <!-- Plugins versions -->
-    <maven-jar-plugin.version>2.6</maven-jar-plugin.version>
+    <maven-jar-plugin.version>3.0.1</maven-jar-plugin.version>
     <maven-war-plugin.version>2.6</maven-war-plugin.version>
     <maven-ear-plugin.version>2.10.1</maven-ear-plugin.version>
     <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
     <maven-assembly-plugin.version>2.6</maven-assembly-plugin.version>
-    <maven-resources-plugin.version>2.7</maven-resources-plugin.version>
+    <maven-resources-plugin.version>3.0.1</maven-resources-plugin.version>
     <maven-invoker-plugin.version>1.5</maven-invoker-plugin.version>
     <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
     <maven-plugin-plugin.version>3.4</maven-plugin-plugin.version>
-    <maven-site-plugin.version>3.5</maven-site-plugin.version>
+    <maven-site-plugin.version>3.5.1</maven-site-plugin.version>
     <maven-source-plugin.version>3.0.0</maven-source-plugin.version>
     <maven-clean-plugin.version>3.0.0</maven-clean-plugin.version>
     <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
@@ -78,8 +78,8 @@
     <maven-failsafe-plugin.version>2.19.1</maven-failsafe-plugin.version>
     <maven-surefire-report-plugin.version>2.19.1</maven-surefire-report-plugin.version>
     <maven-enforcer-plugin.version>1.4.1</maven-enforcer-plugin.version>
-    <maven-project-info-reports-plugin.version>2.8.1</maven-project-info-reports-plugin.version>
-    <maven-javadoc-plugin.version>2.10.3</maven-javadoc-plugin.version>
+    <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
+    <maven-javadoc-plugin.version>2.10.4</maven-javadoc-plugin.version>
     <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
     <maven-jxr-plugin.version>2.5</maven-jxr-plugin.version>
     <maven-jarsigner-plugin.version>1.4</maven-jarsigner-plugin.version>
@@ -100,19 +100,19 @@
     <jaxb2-maven-plugin.version>2.2</jaxb2-maven-plugin.version>
     <maven-jaxb2-plugin.version>0.13.1</maven-jaxb2-plugin.version>
     <maven-jaxb-schemagen-plugin.version>1.2</maven-jaxb-schemagen-plugin.version>
-    <exec-maven-plugin.version>1.4.0</exec-maven-plugin.version>
-    <license-maven-plugin.version>1.8</license-maven-plugin.version>
-    <izpack-maven-plugin.version>5.0.7</izpack-maven-plugin.version>
+    <exec-maven-plugin.version>1.5.0</exec-maven-plugin.version>
+    <license-maven-plugin.version>1.9</license-maven-plugin.version>
+    <izpack-maven-plugin.version>5.0.8</izpack-maven-plugin.version>
     <github-downloads-maven-plugin.version>0.6</github-downloads-maven-plugin.version>
     <github-site-maven-plugin.version>0.12</github-site-maven-plugin.version>
-    <jacoco-maven-plugin.version>0.7.6.201602180812</jacoco-maven-plugin.version>
+    <jacoco-maven-plugin.version>0.7.7.201606060606</jacoco-maven-plugin.version>
 
     <!-- Commonly used project dependencies versions -->
     <junit.version>4.12</junit.version>
     <testng.version>6.9.10</testng.version>
     <jmh.version>1.2.1</jmh.version>
-    <slf4j.version>1.7.18</slf4j.version>
-    <logback.version>1.1.6</logback.version>
+    <slf4j.version>1.7.21</slf4j.version>
+    <logback.version>1.1.7</logback.version>
     <log4j.version>2.5</log4j.version>
 
     <!-- Commonly used build dependencies versions -->
