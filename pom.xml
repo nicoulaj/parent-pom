@@ -118,7 +118,7 @@
     <!-- Commonly used build dependencies versions -->
     <wagon-gitsite.version>0.3.5</wagon-gitsite.version>
     <doxia-module-markdown.version>1.7</doxia-module-markdown.version>
-    <maven-fluido-skin.version>1.4</maven-fluido-skin.version>
+    <maven-fluido-skin.version>1.5</maven-fluido-skin.version>
     <maven-plugin-tools-javadoc.version>3.4</maven-plugin-tools-javadoc.version>
 
     <!-- Misc -->
@@ -186,7 +186,7 @@
             <tagNameFormat>@{project.version}</tagNameFormat>
             <mavenExecutorId>forked-path</mavenExecutorId>
             <autoVersionSubmodules>true</autoVersionSubmodules>
-            <arguments>-Dgpg.passphrase=${gpg.passphrase} -Prelease</arguments>
+            <arguments>-Dgpg.passphrase=${gpg.passphrase} -Prelease -DskipTests -Dinvoker.skip=true</arguments>
             <useReleaseProfile>false</useReleaseProfile>
           </configuration>
         </plugin>
