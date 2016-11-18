@@ -78,7 +78,7 @@
     <maven-assembly-plugin.version>3.0.0</maven-assembly-plugin.version>
     <maven-changelog-plugin.version>2.3</maven-changelog-plugin.version>
     <maven-checkstyle-plugin.version>2.17</maven-checkstyle-plugin.version>
-    <checksum-maven-plugin.version>1.3</checksum-maven-plugin.version>
+    <checksum-maven-plugin.version>1.4</checksum-maven-plugin.version>
     <maven-clean-plugin.version>3.0.0</maven-clean-plugin.version>
     <maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
     <maven-dependency-plugin.version>2.10</maven-dependency-plugin.version>
@@ -117,7 +117,7 @@
 
     <!-- Commonly used project dependencies versions -->
     <junit.version>4.12</junit.version>
-    <testng.version>6.9.13.8</testng.version>
+    <testng.version>6.9.13.6</testng.version>
     <jmh.version>1.2.1</jmh.version>
     <slf4j.version>1.7.21</slf4j.version>
     <logback.version>1.1.7</logback.version>
