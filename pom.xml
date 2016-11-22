@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>net.ju-n</groupId>
-  <artifactId>net-ju-n-parent</artifactId>
+  <groupId>net.nicoulaj</groupId>
+  <artifactId>parent</artifactId>
   <version>44-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>net.ju-n parent POM</name>
+  <name>net.nicoulaj parent POM</name>
   <inceptionYear>2011</inceptionYear>
-  <description><![CDATA[net.ju-n parent POM]]></description>
+  <description><![CDATA[net.nicoulaj parent POM]]></description>
   <url>https://github.com/nicoulaj/parent-pom</url>
 
   <licenses>
@@ -48,10 +48,6 @@
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
       <uniqueVersion>false</uniqueVersion>
     </snapshotRepository>
-    <relocation>
-      <groupId>net.nicoulaj</groupId>
-      <artifactId>parent</artifactId>
-    </relocation>
   </distributionManagement>
 
   <properties>
@@ -375,7 +371,7 @@
           <version>${license-maven-plugin.version}</version>
         </plugin>
         <plugin>
-          <groupId>net.ju-n.maven.plugins</groupId>
+          <groupId>net.nicoulaj.maven.plugins</groupId>
           <artifactId>checksum-maven-plugin</artifactId>
           <version>${checksum-maven-plugin.version}</version>
         </plugin>
