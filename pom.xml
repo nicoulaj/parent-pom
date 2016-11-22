@@ -50,6 +50,7 @@
     </snapshotRepository>
     <relocation>
       <groupId>net.nicoulaj</groupId>
+      <artifactId>parent</artifactId>
     </relocation>
   </distributionManagement>
 
