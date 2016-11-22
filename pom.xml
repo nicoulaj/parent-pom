@@ -48,6 +48,9 @@
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
       <uniqueVersion>false</uniqueVersion>
     </snapshotRepository>
+    <relocation>
+      <groupId>net.nicoulaj</groupId>
+    </relocation>
   </distributionManagement>
 
   <properties>
