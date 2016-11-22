@@ -4,7 +4,7 @@
 
   <groupId>net.ju-n</groupId>
   <artifactId>net-ju-n-parent</artifactId>
-  <version>43-SNAPSHOT</version>
+  <version>43</version>
   <packaging>pom</packaging>
 
   <name>net.ju-n parent POM</name>
@@ -32,7 +32,7 @@
     <url>https://github.com/nicoulaj/parent-pom</url>
     <connection>scm:git:git@github.com:nicoulaj/parent-pom.git</connection>
     <developerConnection>scm:git:git@github.com:nicoulaj/parent-pom.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>43</tag>
   </scm>
 
   <distributionManagement>
