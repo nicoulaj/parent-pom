@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright © 2011-2016 Julien Nicoulaud (julien.nicoulaud@gmail.com)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
@@ -14,7 +31,8 @@
 
   <licenses>
     <license>
-      <name>${license}</name>
+      <name>${license.name}</name>
+      <url>${license.url}</url>
     </license>
   </licenses>
 
@@ -23,8 +41,8 @@
       <id>nicoulaj</id>
       <name>Julien Nicoulaud</name>
       <email>julien.nicoulaud@gmail.com</email>
+      <url>http://www.github.com/nicoulaj</url>
       <timezone>+1</timezone>
-      <url>http://www.twitter.com/nicoulaj</url>
     </developer>
   </developers>
 
@@ -52,15 +70,18 @@
 
   <properties>
 
+    <!-- Declare dynamic properties to prevent IDE errors -->
     <gpg.passphrase/>
+    <year>2016</year>
 
     <!-- Encoding -->
     <encoding>UTF-8</encoding>
     <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
 
     <!-- License -->
-    <license>apache_v2</license>
-    <copyrightholder>Julien Nicoulaud &lt;julien.nicoulaud@gmail.com&gt;</copyrightholder>
+    <license.name>The Apache License, Version 2.0</license.name>
+    <license.url>https://www.apache.org/licenses/LICENSE-2.0</license.url>
+    <license.header>${project.basedir}/etc/license/header.txt</license.header>
 
     <!-- Plugins versions -->
     <animal-sniffer-maven-plugin.version>1.15</animal-sniffer-maven-plugin.version>
@@ -74,7 +95,7 @@
     <izpack-maven-plugin.version>5.0.10</izpack-maven-plugin.version>
     <jacoco-maven-plugin.version>0.7.7.201606060606</jacoco-maven-plugin.version>
     <jaxb2-maven-plugin.version>2.3</jaxb2-maven-plugin.version>
-    <license-maven-plugin.version>1.10</license-maven-plugin.version>
+    <license-maven-plugin.version>3.0</license-maven-plugin.version>
     <m2e-lifecycle-mapping.version>1.0.0</m2e-lifecycle-mapping.version>
     <maven-android-plugin.version>3.0.0-alpha-11</maven-android-plugin.version>
     <maven-assembly-plugin.version>3.0.0</maven-assembly-plugin.version>
@@ -354,11 +375,6 @@
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
-          <artifactId>build-helper-maven-plugin</artifactId>
-          <version>${build-helper-maven-plugin.version}</version>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
           <artifactId>jaxb2-maven-plugin</artifactId>
           <version>${jaxb2-maven-plugin.version}</version>
         </plugin>
@@ -366,11 +382,6 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>animal-sniffer-maven-plugin</artifactId>
           <version>${animal-sniffer-maven-plugin.version}</version>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>license-maven-plugin</artifactId>
-          <version>${license-maven-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>net.nicoulaj.maven.plugins</groupId>
@@ -480,6 +491,16 @@
           <artifactId>rpm-maven-plugin</artifactId>
           <version>${rpm-maven-plugin.version}</version>
         </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>build-helper-maven-plugin</artifactId>
+          <version>${build-helper-maven-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>com.mycila</groupId>
+          <artifactId>license-maven-plugin</artifactId>
+          <version>${license-maven-plugin.version}</version>
+        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
@@ -572,6 +593,7 @@
   </reporting>
 
   <profiles>
+
     <profile>
         <id>disable-java8-doclint</id>
         <activation>
@@ -581,6 +603,7 @@
             <additionalparam>-Xdoclint:none</additionalparam>
         </properties>
     </profile>
+
     <profile>
       <id>release</id>
       <activation>
@@ -634,6 +657,7 @@
         </plugins>
       </build>
     </profile>
+
     <profile>
       <id>license</id>
       <build>
@@ -641,30 +665,50 @@
         <plugins>
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <phase>process-sources</phase>
+                <id>store-current-year-property</id>
+                <goals>
+                  <goal>timestamp-property</goal>
+                </goals>
+                <configuration>
+                  <locale>en,US</locale>
+                  <name>year</name>
+                  <pattern>yyyy</pattern>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>com.mycila</groupId>
             <artifactId>license-maven-plugin</artifactId>
             <executions>
               <execution>
-                <id>update-license-headers</id>
                 <phase>process-sources</phase>
+                <id>update-license-headers</id>
                 <goals>
-                  <goal>update-project-license</goal>
-                  <goal>update-file-header</goal>
+                  <goal>format</goal>
                 </goals>
                 <configuration>
-                  <organizationName>${copyrightholder}</organizationName>
-                  <licenseName>${license}</licenseName>
-                  <licenseFile>${project.basedir}/COPYING</licenseFile>
-                  <canUpdateCopyright>true</canUpdateCopyright>
-                  <canUpdateDescription>true</canUpdateDescription>
-                  <canUpdateLicense>true</canUpdateLicense>
-                  <addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
-                  <ignoreNoFileToScan>true</ignoreNoFileToScan>
-                  <processStartTag>====================================================================</processStartTag>
-                  <processEndTag>====================================================================</processEndTag>
-                  <sectionDelimiter>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</sectionDelimiter>
-                  <roots>
-                    <root>${project.basedir}</root>
-                  </roots>
+                  <aggregate>true</aggregate>
+                  <header>${license.header}</header>
+                  <properties>
+                    <year>${year}</year>
+                  </properties>
+                  <excludes>
+                    <exclude>**/COPYING</exclude>
+                    <exclude>**/LICENSE</exclude>
+                    <exclude>**/README</exclude>
+                    <exclude>**/INSTALL</exclude>
+                    <exclude>**/local/**</exclude>
+                    <exclude>**/.mvn/**</exclude>
+                    <exclude>**/*.tokens</exclude>
+                  </excludes>
+                  <mapping>
+                    <g4>JAVADOC_STYLE</g4>
+                  </mapping>
                 </configuration>
               </execution>
             </executions>
@@ -672,6 +716,7 @@
         </plugins>
       </build>
     </profile>
+
   </profiles>
 
 </project>
