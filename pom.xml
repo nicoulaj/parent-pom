@@ -656,9 +656,13 @@
                   <canUpdateDescription>true</canUpdateDescription>
                   <canUpdateLicense>true</canUpdateLicense>
                   <addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
+                  <ignoreNoFileToScan>true</ignoreNoFileToScan>
                   <processStartTag>====================================================================</processStartTag>
                   <processEndTag>====================================================================</processEndTag>
-                  <sectionDelimiter>====================================================================</sectionDelimiter>
+                  <sectionDelimiter>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</sectionDelimiter>
+                  <roots>
+                    <root>${project.basedir}</root>
+                  </roots>
                 </configuration>
               </execution>
             </executions>
