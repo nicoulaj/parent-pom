@@ -705,6 +705,24 @@
                     <exclude>**/local/**</exclude>
                     <exclude>**/.mvn/**</exclude>
                     <exclude>**/*.tokens</exclude>
+                    <exclude>**/*.txt</exclude>
+                    <exclude>**/*.sha1</exclude>
+                    <exclude>**/*.sha224</exclude>
+                    <exclude>**/*.sha256</exclude>
+                    <exclude>**/*.sha384</exclude>
+                    <exclude>**/*.sha512</exclude>
+                    <exclude>**/*.ripemd128</exclude>
+                    <exclude>**/*.ripemd160</exclude>
+                    <exclude>**/*.ripemd256</exclude>
+                    <exclude>**/*.ripemd320</exclude>
+                    <exclude>**/*.md2</exclude>
+                    <exclude>**/*.md4</exclude>
+                    <exclude>**/*.md5</exclude>
+                    <exclude>**/*.cksum</exclude>
+                    <exclude>**/*.crc32</exclude>
+                    <exclude>**/*.gost3411</exclude>
+                    <exclude>**/*.tiger</exclude>
+                    <exclude>**/*.whirlpool</exclude>
                   </excludes>
                   <mapping>
                     <g4>JAVADOC_STYLE</g4>
