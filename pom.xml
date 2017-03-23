@@ -71,7 +71,6 @@
   <properties>
 
     <!-- Declare dynamic properties to prevent IDE errors -->
-    <gpg.passphrase />
     <year>2016</year>
 
     <!-- Encoding -->
@@ -267,7 +266,7 @@
             <tagNameFormat>@{project.version}</tagNameFormat>
             <mavenExecutorId>forked-path</mavenExecutorId>
             <autoVersionSubmodules>true</autoVersionSubmodules>
-            <arguments>-Dgpg.passphrase=${gpg.passphrase} -Prelease -DskipTests -Dinvoker.skip=true</arguments>
+            <arguments>-Prelease -DskipTests -Dinvoker.skip=true</arguments>
             <useReleaseProfile>false</useReleaseProfile>
           </configuration>
         </plugin>
