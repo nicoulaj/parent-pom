@@ -41,3 +41,16 @@ before_install:
 install: true
 
 script: $M2_HOME/bin/mvn -V clean install
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
+    on_start: never
+  irc:
+    channels:
+      - "chat.freenode.net#nicoulaj"
+    on_success: always
+    on_failure: always
+    on_start: never
+    use_notice: true
