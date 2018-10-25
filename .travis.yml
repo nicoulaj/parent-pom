@@ -19,12 +19,6 @@ env:
   - MAVEN=3.3.9
   - MAVEN=3.5.4
 
-matrix:
-  fast_finish: true
-  allow_failures:
-  - jdk: oraclejdk11
-  - jdk: openjdk11
-
 before_install:
   - export M2_HOME=/tmp/maven-${MAVEN}
   - mkdir $M2_HOME
