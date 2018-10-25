@@ -100,7 +100,7 @@
     <maven-assembly-plugin.version>3.1.0</maven-assembly-plugin.version>
     <maven-changelog-plugin.version>2.3</maven-changelog-plugin.version>
     <maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
-    <checksum-maven-plugin.version>1.6</checksum-maven-plugin.version>
+    <checksum-maven-plugin.version>1.8</checksum-maven-plugin.version>
     <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
     <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
     <maven-dependency-plugin.version>2.10</maven-dependency-plugin.version>
@@ -110,6 +110,7 @@
     <maven-failsafe-plugin.version>2.22.0</maven-failsafe-plugin.version>
     <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
     <maven-invoker-plugin.version>3.1.0</maven-invoker-plugin.version>
+    <maven-install-plugin.version>3.0.0-M1</maven-install-plugin.version>
     <maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>
     <maven-jarsigner-plugin.version>1.4</maven-jarsigner-plugin.version>
     <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
@@ -135,7 +136,7 @@
     <sql-maven-plugin.version>1.5</sql-maven-plugin.version>
     <taglist-maven-plugin.version>2.4</taglist-maven-plugin.version>
     <templating-maven-plugin.version>1.0.0</templating-maven-plugin.version>
-    <versions-maven-plugin.version>2.5</versions-maven-plugin.version>
+    <versions-maven-plugin.version>2.7</versions-maven-plugin.version>
 
     <!-- Commonly used project dependencies versions -->
     <jsr305.version>3.0.2</jsr305.version>
@@ -295,6 +296,10 @@
         <plugin>
           <artifactId>maven-assembly-plugin</artifactId>
           <version>${maven-assembly-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>${maven-install-plugin.version}</version>
         </plugin>
         <plugin>
           <artifactId>maven-invoker-plugin</artifactId>
@@ -514,14 +519,15 @@
         <executions>
           <execution>
             <id>enforce-maven-version</id>
+            <phase>initialize</phase>
             <goals>
               <goal>enforce</goal>
             </goals>
             <configuration>
               <rules>
                 <requireMavenVersion>
-                  <version>[3.2.1,)</version>
-                  <message>Maven v3.2.1+ is required to build this project, please update.</message>
+                  <version>3.0.5</version>
+                  <message>Maven v3.0.5+ is required to build this project, please update.</message>
                 </requireMavenVersion>
               </rules>
             </configuration>
