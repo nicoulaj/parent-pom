@@ -10,21 +10,14 @@ jdk:
   - openjdk8
   - oraclejdk9
   - openjdk9
-  - oraclejdk10
   - openjdk10
-  - oraclejdk11
   - openjdk11
 env:
-  - MAVEN=3.2.1
-  - MAVEN=3.2.2
-  - MAVEN=3.2.3
+  - MAVEN=3.0.5
+  - MAVEN=3.1.1
   - MAVEN=3.2.5
-  - MAVEN=3.3.1
-  - MAVEN=3.3.3
   - MAVEN=3.3.9
-  - MAVEN=3.5.0
-  - MAVEN=3.5.2
-  - MAVEN=3.5.3
+  - MAVEN=3.5.4
 
 matrix:
   fast_finish: true
