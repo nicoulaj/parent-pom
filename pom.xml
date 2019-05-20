@@ -83,7 +83,7 @@
     <license.header>${project.basedir}/etc/license/header.txt</license.header>
 
     <!-- Plugins versions -->
-    <animal-sniffer-maven-plugin.version>1.17</animal-sniffer-maven-plugin.version>
+    <animal-sniffer-maven-plugin.version>1.18</animal-sniffer-maven-plugin.version>
     <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
     <buildnumber-maven-plugin.version>1.4</buildnumber-maven-plugin.version>
     <cobertura-maven-plugin.version>2.7</cobertura-maven-plugin.version>
