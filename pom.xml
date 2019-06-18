@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright © 2011-2018 Julien Nicoulaud (julien.nicoulaud@gmail.com)
+    Copyright © 2011-2019 Julien Nicoulaud (julien.nicoulaud@gmail.com)
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -71,7 +71,7 @@
   <properties>
 
     <!-- Declare dynamic properties to prevent IDE errors -->
-    <year>2018</year>
+    <year>2019</year>
 
     <!-- Encoding -->
     <encoding>UTF-8</encoding>
