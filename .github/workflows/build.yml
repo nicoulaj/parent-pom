@@ -48,7 +48,7 @@ jobs:
         [[ ! -d ~/maven ]] && mkdir ~/maven && wget -qO- https://archive.apache.org/dist/maven/maven-3/${{ matrix.maven }}/binaries/apache-maven-${{ matrix.maven }}-bin.tar.gz | tar xz --strip 1 -C ~/maven
 
     - name: Build
-        env:
+      env:
         M2_HOME: ~/maven
       run: ~/maven/bin/mvn -V --batch-mode clean verify
 
