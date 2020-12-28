@@ -149,7 +149,7 @@
 
     <!-- Commonly used build dependencies versions -->
     <wagon-gitsite.version>0.3.5</wagon-gitsite.version>
-    <doxia-module-markdown.version>1.9</doxia-module-markdown.version>
+    <doxia-module-markdown.version>1.9.1</doxia-module-markdown.version>
     <maven-fluido-skin.version>1.6</maven-fluido-skin.version>
     <maven-plugin-tools-javadoc.version>3.5</maven-plugin-tools-javadoc.version>
 
