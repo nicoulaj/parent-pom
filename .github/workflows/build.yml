@@ -48,7 +48,9 @@ jobs:
         if [[ ! -f ~/maven/bin/mvn ]]; then mkdir -p ~/maven && wget -qO- https://archive.apache.org/dist/maven/maven-3/${{ matrix.maven }}/binaries/apache-maven-${{ matrix.maven }}-bin.tar.gz | tar xz --strip 1 -C ~/maven; fi
 
     - name: Build
-      run: PATH=~/maven/bin:$PATH mvn -V --batch-mode clean verify
+      run: |
+        unset M2_HOME
+        PATH=~/maven/bin:$PATH mvn -V --batch-mode clean verify
 
     - name: Publish snapshot to Github Packages repository
       if: github.event_name == 'push' && github.ref == 'refs/heads/master' && matrix.os == 'ubuntu-latest' && matrix.java == '8' && matrix.maven == '3.6.3'
