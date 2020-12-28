@@ -45,7 +45,7 @@ jobs:
 
     - name: Setup Maven
       run: |
-        [[ ! -d ~/maven ]] && mkdir ~/maven && wget -qO- https://archive.apache.org/dist/maven/maven-3/${{ matrix.maven }}/binaries/apache-maven-${{ matrix.maven }}-bin.tar.gz | tar xz --strip 1 -C ~/maven
+        if [[ ! -f ~/maven/bin/mvn ]]; then mkdir -p ~/maven && wget -qO- https://archive.apache.org/dist/maven/maven-3/${{ matrix.maven }}/binaries/apache-maven-${{ matrix.maven }}-bin.tar.gz | tar xz --strip 1 -C ~/maven; fi
 
     - name: Build
       env:
