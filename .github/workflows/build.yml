@@ -55,5 +55,5 @@ jobs:
     - name: Publish snapshot to Github Packages repository
       if: github.event_name == 'push' && github.ref == 'refs/heads/master' && matrix.os == 'ubuntu-latest' && matrix.java == '8' && matrix.maven == '3.6.3'
       env:
-        GITHUB_TOKEN: ${{ github.token }}
-      run: mvn --batch-mode deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/nicoulaj -DskipTests
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: mvn --batch-mode deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/nicoulaj/parent-pom -DskipTests
