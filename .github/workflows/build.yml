@@ -49,8 +49,8 @@ jobs:
 
     - name: Build
       run: |
-        unset M2_HOME
-        export PATH=~/maven/bin:$PATH
+        export M2_HOME=~/maven
+        export PATH=$M2_HOME/bin:$PATH
         mvn -V --batch-mode clean verify
 
     - name: Publish snapshot to Github Packages repository
