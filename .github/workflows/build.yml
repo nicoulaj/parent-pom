@@ -51,6 +51,8 @@ jobs:
       run: |
         export M2_HOME=~/maven
         export PATH=$M2_HOME/bin:$PATH
+        env
+        which mvn
         mvn -V --batch-mode clean verify
 
     - name: Publish snapshot to Github Packages repository
