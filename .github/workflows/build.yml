@@ -50,7 +50,8 @@ jobs:
     - name: Build
       run: |
         unset M2_HOME
-        PATH=~/maven/bin:$PATH mvn -V --batch-mode clean verify
+        export PATH=~/maven/bin:$PATH
+        mvn -V --batch-mode clean verify
 
     - name: Publish snapshot to Github Packages repository
       if: github.event_name == 'push' && github.ref == 'refs/heads/master' && matrix.os == 'ubuntu-latest' && matrix.java == '8' && matrix.maven == '3.6.3'
