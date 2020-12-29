@@ -26,9 +26,7 @@ jobs:
       uses: actions/cache@v2
       with:
         path: ~/maven
-        key: ${{ runner.os }}-maven-${{ matrix.maven }}
-        restore-keys: |
-          ${{ runner.os }}-maven-
+        key: ${{ runner.os }}-maven-installation-${{ matrix.maven }}
 
     - name: Setup Maven repository cache
       uses: actions/cache@v2
@@ -48,15 +46,8 @@ jobs:
         if [[ ! -f ~/maven/bin/mvn ]]; then mkdir -p ~/maven && wget -qO- https://archive.apache.org/dist/maven/maven-3/${{ matrix.maven }}/binaries/apache-maven-${{ matrix.maven }}-bin.tar.gz | tar xz --strip 1 -C ~/maven; fi
 
     - name: Build
-      run: |
-        export M2_HOME=~/maven
-        export PATH=$M2_HOME/bin:$PATH
-        env
-        which mvn
-        mvn -V --batch-mode clean verify
+      run: ~/maven/bin/mvn -V --batch-mode clean verify
 
     - name: Publish snapshot to Github Packages repository
       if: github.event_name == 'push' && github.ref == 'refs/heads/master' && matrix.os == 'ubuntu-latest' && matrix.java == '8' && matrix.maven == '3.6.3'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: mvn --batch-mode deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/nicoulaj/parent-pom -DskipTests
