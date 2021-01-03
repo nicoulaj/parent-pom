@@ -44,7 +44,7 @@ jobs:
     - name: Setup Maven
       shell: bash
       run: |
-        if [[ ! -f ~/maven/bin/mvn ]]; then mkdir -p ~/maven && wget -qO- https://archive.apache.org/dist/maven/maven-3/${{ matrix.maven }}/binaries/apache-maven-${{ matrix.maven }}-bin.tar.gz | tar xz --strip 1 -C ~/maven; fi
+        if [[ ! -f ~/maven/bin/mvn ]]; then mkdir -p ~/maven && curl -s https://archive.apache.org/dist/maven/maven-3/${{ matrix.maven }}/binaries/apache-maven-${{ matrix.maven }}-bin.tar.gz | tar xvz --strip 1 - -C ~/maven; fi
 
     - name: Build
       shell: bash
