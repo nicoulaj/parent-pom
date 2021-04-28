@@ -118,7 +118,7 @@
     <maven-jaxb2-plugin.version>0.14.0</maven-jaxb2-plugin.version>
     <maven-jaxb-schemagen-plugin.version>1.2</maven-jaxb-schemagen-plugin.version>
     <maven-jxr-plugin.version>3.1.1</maven-jxr-plugin.version>
-    <maven-plugin-plugin.version>3.6.0</maven-plugin-plugin.version>
+    <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
     <maven-pmd-plugin.version>3.14.0</maven-pmd-plugin.version>
     <maven-project-info-reports-plugin.version>3.1.1</maven-project-info-reports-plugin.version>
     <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
