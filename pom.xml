@@ -130,7 +130,7 @@
     <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
     <maven-surefire-report-plugin.version>3.0.0-M5</maven-surefire-report-plugin.version>
     <maven-war-plugin.version>3.3.1</maven-war-plugin.version>
-    <proguard-maven-plugin.version>2.4.0</proguard-maven-plugin.version>
+    <proguard-maven-plugin.version>2.5.2</proguard-maven-plugin.version>
     <rpm-maven-plugin.version>2.2.0</rpm-maven-plugin.version>
     <sonar-maven-plugin.version>3.9.0.2155</sonar-maven-plugin.version>
     <sql-maven-plugin.version>1.5</sql-maven-plugin.version>
