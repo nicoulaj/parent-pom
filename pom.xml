@@ -87,7 +87,7 @@
     <build-helper-maven-plugin.version>3.3.0</build-helper-maven-plugin.version>
     <buildnumber-maven-plugin.version>3.0.0</buildnumber-maven-plugin.version>
     <cobertura-maven-plugin.version>2.7</cobertura-maven-plugin.version>
-    <exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
+    <exec-maven-plugin.version>3.1.0</exec-maven-plugin.version>
     <flexmojos-maven-plugin.version>3.8</flexmojos-maven-plugin.version>
     <github-downloads-maven-plugin.version>0.6</github-downloads-maven-plugin.version>
     <github-site-maven-plugin.version>0.12</github-site-maven-plugin.version>
